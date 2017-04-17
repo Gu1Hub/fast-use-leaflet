@@ -1,0 +1,28 @@
+{
+  "name": "fast-use-leaflet",
+  "authors": [
+    "Guillaume LEFEBVRE <gu1hub@laposte.net>"
+  ],
+  "description": "Simple map with start and end point, Ajax",
+  "main": "fast-use-leaflet.js",
+  "keywords": [
+    "leaflet",
+    "angular",
+    "ajax",
+    "simple",
+    "map"
+  ],
+  "license": "BSD 2-clause \"Simplified\" License",
+  "homepage": "https://github.com/Gu1Hub/fast-use-leaflet",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.4",
+    "leaflet": "^1.0.3"
+  }
+}

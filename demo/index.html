@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Demo fast-use-leaflet">
+  <meta name="keywords" content="leaflet,openstreetmap,angular">
+  <meta name="author" content="Gu1hub">
+  <title>Demo fast-use-leaflet</title>
+
+  <script src="../../angular/angular.js"></script>
+
+  <link rel="stylesheet" href="../../leaflet/dist/leaflet.css" />
+  <script src="../../leaflet/dist/leaflet.js"></script>
+
+  <script src="controller.js"></script>
+
+  <script id="fastUseLeaflet" src="../fast-use-leaflet.js"></script>
+
+</head>
+<body ng-app="app" ng-controller="controllerData">
+
+  <!-- view map -->
+  <div class="viewMap">
+    <h2>Map :</h2>
+    <div id="map" style="height:400px; width:600px"></div>
+  </div>
+
+  <button type="button" ng-click="objMAP.resetMap(objMAP.FULL)">Reset</button>
+  <!-- Fin view map -->
+
+
+  <!-- Liste des éléments itinéraire / Routes -->
+
+  <div class="viewRoutes" >
+
+    <ul>
+      <li>
+        <h2>Routes one - Le Mont-Saint-Michel </h2>
+        <p>Start point : (lat: 48.6109 / lng: -1.5051)</p>
+        <p>End point : (lat: 48.63589 / lng: -1.51227)</p>
+        <button type="button" ng-click="objMAP.changeViewMap(48.6109,-1.5051,48.63589,-1.51227,12)">Visualiser</button>
+      </li>
+
+      <li>
+        <h2>Routes two - Etretat </h2>
+        <p>Start point : (lat: 49.7072 / lng: 0.2016)</p>
+        <p>End point : (lat: 49.707 / lng: 0.1945)</p>
+        <button type="button" ng-click="objMAP.changeViewMap(49.7072,0.2016,49.707,0.1945,14)">Visualiser</button>
+      </li>
+
+    </ul>
+  </div>
+  <!-- Fin Liste des éléments itinéraire -->
+
+
+</body>
+</html>
